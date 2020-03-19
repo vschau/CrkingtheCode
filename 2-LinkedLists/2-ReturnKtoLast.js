@@ -1,5 +1,7 @@
 // Find kth to last element in the linked list
-
+// Solution: use 2 pointers.  Move 1st pointer kth time.  Then move the two pointers together to the end.
+// cur2 will be length-k from the list or k from the end
+// Runtime: O(n)
 let llModule = require('../Models/LinkedList');
 
 llModule.LinkedList.prototype.kToLast = function(k) {
